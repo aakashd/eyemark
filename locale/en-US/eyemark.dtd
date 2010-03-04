@@ -1,0 +1,5 @@
+<!ENTITY eyemark.label "Your localized menuitem">
+<!ENTITY eyemarkContext.label "Your Menuitem">
+<!ENTITY eyemarkContext.accesskey "Y">
+<!ENTITY eyemarkToolbar.label "Your Toolbar Button">
+<!ENTITY eyemarkToolbar.tooltip "This is your toolbar button!">

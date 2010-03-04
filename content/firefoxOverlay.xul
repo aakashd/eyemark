@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="chrome://eyemark/skin/overlay.css" type="text/css"?>
+<!DOCTYPE overlay SYSTEM "chrome://eyemark/locale/eyemark.dtd">
+<overlay id="eyemark-overlay"
+         xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+  <script src="overlay.js"/>
+  <stringbundleset id="stringbundleset">
+    <stringbundle id="eyemark-strings" src="chrome://eyemark/locale/eyemark.properties"/>
+  </stringbundleset>
+
+  <menupopup id="menu_ToolsPopup">
+    <menuitem id="eyemark-hello" label="&eyemark.label;" 
+              oncommand="eyemark.onMenuItemCommand(event);"/>
+  </menupopup>
+  <popup id="contentAreaContextMenu">
+    <menuitem id="context-eyemark" label="&eyemarkContext.label;"
+              accesskey="&eyemarkContext.accesskey;"
+              insertafter="context-stop"
+              oncommand="eyemark.onMenuItemCommand(event)"/>
+  </popup>
+  <toolbarpalette id="BrowserToolbarPalette">
+  <toolbarbutton id="eyemark-toolbar-button"
+    label="&eyemarkToolbar.label;"
+    tooltiptext="&eyemarkToolbar.tooltip;"
+    oncommand="eyemark.onToolbarButtonCommand()"
+    class="toolbarbutton-1 chromeclass-toolbar-additional"/>
+  </toolbarpalette>
+</overlay>

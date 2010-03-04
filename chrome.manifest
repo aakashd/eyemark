@@ -1,0 +1,5 @@
+content	eyemark	content/
+locale	eyemark	en-US	locale/en-US/
+skin	eyemark	classic/1.0	skin/
+overlay	chrome://browser/content/browser.xul	chrome://eyemark/content/firefoxOverlay.xul
+style	chrome://global/content/customizeToolbar.xul	chrome://eyemark/skin/overlay.css
